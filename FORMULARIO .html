@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>PESQUISA</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>PESQUISA DE SATISFAÇÃO</h1>
+        <p>Preencha o formulário abaixo para participar da nossa pesquisa.</p>
+        <p>Suas respostas são importantes para nós!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>PESQUISA DE SATISFAÇAO</h2>
+            <p>sua opinao e muito importante para nos.Preencha os campos abaixo.</p>
+        </section>
+
+        <article>
+            <h3> DADOS DOS PARTICIPANTE</h3>
+            <p>Preencha suas informaçoes para participar da pesquisa.</p>
+        </article>
+
+        <form>
+            <label for="nome">NOME:</label>
+            <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui" required>
+
+            <label for="email">EMAIL:</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu e-mail aqui" required>
+
+            <label for="telefone">TELEFONE:</label>
+            <input id="telefone" type="tel" name="telefone" placeholder="(27) 9999-9999" required>
+
+            <label for="idade">IDADE:</label>
+            <select id="idade" name="idade" required>
+                <option value="" disabled selected>Selecione a sua idade</option>
+                <option value="18-25">18-25 anos</option>
+                <option value="30-37">30-37 anos</option>
+                <option value="40-45">40-45 anos</option>
+            </select>
+
+            <label for="comentario">COMENTÁRIO:</label>
+            <textarea id="comentario" name="comentario" rows="5" placeholder="Digite seu comentário aqui :)" required></textarea>
+
+            <fieldset>
+                <legend>GÊNERO:</legend>
+                <label>
+                    <input type="radio" name="genero" value="masculino" required>
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="feminino">
+                    Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="outro">
+                    Outro
+                </label>
+            </fieldset>
+
+            <label for="atendimento">Avalie nosso atendimento:</label>
+            <select id="atendimento" name="atendimento" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="excelente">Excelente</option>
+                <option value="bom">Bom</option>
+                <option value="regular">Regular</option>
+                <option value="ruim">Ruim</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <p>Feliz por participar da nossa pesquisa!</p>
+    </footer>
+</body>
+</html>
